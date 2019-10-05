@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Product1_Activity"
+    android:background="@color/whilte">
+
+    <!-- viewpager 換圖 -->
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="230dp" />
+
+    <!-- 換圖 dots -->
+    <com.lwj.widget.viewpagerindicator.ViewPagerIndicator
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/viewpager"
+        app:default_color="#cdcdcd"
+        app:indicatorType="CIRCLE"
+        app:length="24dp"
+        app:radius="3dp"
+        app:selected_color="@color/orange" />
+
+    <!-- scroll -->
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_below="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- 產品名稱+價錢 -->
+            <LinearLayout
+                android:id="@+id/linearlayout_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3sp"
+                android:layout_marginRight="3sp"
+                android:orientation="vertical">
+
+                <!-- 產品名稱 -->
+                <TextView
+                    android:id="@+id/textView_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:text="@string/P2_title"
+                    android:textColor="@color/title"
+                    android:textSize="18sp" />
+
+                <!-- 產品價錢 -->
+                <TextView
+                    android:id="@+id/textView_money"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    android:layout_marginRight="5sp"
+                    android:text="@string/P2_money"
+                    android:textColor="@color/money"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <!-- 產品資訊 -->
+            <LinearLayout
+                android:id="@+id/linearlayout_information"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/linearlayout_information_V"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5sp"
+                    android:layout_marginRight="5sp"
+                    android:orientation="vertical">
+
+                    <!-- 商品規格 -->
+                    <TextView
+                        android:id="@+id/textView__specification_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/card_background"
+                        android:text="@string/specification"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- 品牌 -->
+                    <LinearLayout
+                        android:id="@+id/linearlayout_brand"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_brand_statement"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/brand"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/textView_brand"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="@string/P2_brand"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="15sp"/>
+                    </LinearLayout>
+
+                    <!-- 出貨地 -->
+                    <LinearLayout
+                        android:id="@+id/linearlayout_place"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_place_statement"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="@string/place"
+                            android:textSize="12sp"
+                            android:gravity="center"/>
+
+                        <TextView
+                            android:id="@+id/textView_place"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="@string/P2_place"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="15sp"/>
+                    </LinearLayout>
+
+                    <!-- 商品詳情 -->
+                    <TextView
+                        android:id="@+id/textView__information_title"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/card_background"
+                        android:text="@string/information"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+
+                    <!-- description -->
+                    <TextView
+                        android:id="@+id/textView_description"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/P2_description"
+                        android:textColor="@color/black"
+                        android:textSize="12sp"/>
+
+                    <!-- 大小 -->
+                    <LinearLayout
+                        android:id="@+id/linearlayout_size"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/textView_size_statement"
+                            android:layout_width="1dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="@string/size_statement"
+                            android:textSize="12sp" />
+
+                        <TextView
+                            android:id="@+id/textView_size"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4"
+                            android:text="@string/P2_size"
+                            android:textColor="@color/black"
+                            android:textSize="12sp"
+                            android:layout_marginLeft="15sp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 數量選擇 -->
+            <LinearLayout
+                android:id="@+id/linearlayout_number"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/textView_number_statement"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="4"
+                    android:gravity="right"
+                    android:text="@string/number"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <!-- space -->
+                <TextView
+                    android:id="@+id/textView_space1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+                <!-- sub button -->
+                <Button
+                    android:id="@+id/button_sub"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/sub"
+                    android:textSize="20sp" />
+
+                <!-- number顯示 -->
+                <TextView
+                    android:id="@+id/textView_number"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:textColor="@color/dark_green"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- add button -->
+                <Button
+                    android:id="@+id/button_add"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="onClick"
+                    android:text="@string/add"
+                    android:textSize="15sp" />
+
+                <!-- space -->
+                <TextView
+                    android:id="@+id/textView_space2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.3" />
+            </LinearLayout>
+
+            <!-- 加入購物車 -->
+            <LinearLayout
+                android:id="@+id/linearlayout_add_shopping_car"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- space -->
+                <TextView
+                    android:id="@+id/textView_sapce3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2" />
+
+                <!-- 加入購物車圖片 -->
+                <ImageView
+                    android:id="@+id/imageView_add_shopping_car"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    app:srcCompat="@drawable/ic_add_shopping_car" />
+
+                <!-- add_shopping_car button -->
+                <Button
+                    android:id="@+id/button_add_shopping_car"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/add_shopping_car"
+                    android:textColor="@color/red"
+                    android:textSize="15sp" />
+
+                <!-- space -->
+                <TextView
+                    android:id="@+id/textView_space4"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.2" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

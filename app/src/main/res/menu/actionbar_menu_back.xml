@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/keyboard_backspace"
+        android:icon="@drawable/ic_keyboard_backspace"
+        android:title="keyboard_backspace"
+        android:orderInCategory="1"
+        app:showAsAction="always" />
+
+    <item android:id="@+id/shopping_car"
+        android:icon="@drawable/ic_shopping_car"
+        android:title="add_shopping_car"
+        android:orderInCategory="2"
+        app:showAsAction="always"/>
+</menu>

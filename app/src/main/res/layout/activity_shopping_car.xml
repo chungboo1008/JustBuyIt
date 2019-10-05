@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShoppingCarActivity">
+
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="320dp">
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/textView_space"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/listview" />
+
+    <TextView
+        android:id="@+id/textView_longtouch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_space"
+        android:gravity="center"
+        android:text="@string/longtouch"
+        android:textColor="@color/orange"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/textView_space4"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_below="@+id/textView_longtouch" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_pay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_space4"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView_space2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3" />
+
+        <ImageView
+            android:id="@+id/imageView_pay1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            app:srcCompat="@drawable/ic_money" />
+
+        <Button
+            android:id="@+id/button_pay"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.5"
+            android:gravity="center"
+            android:onClick="Pay"
+            android:text="@string/pay"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView_pay2"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.3"
+            app:srcCompat="@drawable/ic_money" />
+
+        <TextView
+            android:id="@+id/textView_space3"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1.3" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView_space5"
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:layout_below="@+id/linearlayout_pay" />
+
+    <TextView
+        android:id="@+id/textView_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView_space5"
+        android:gravity="center"
+        android:text="@string/total"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+
+</RelativeLayout>

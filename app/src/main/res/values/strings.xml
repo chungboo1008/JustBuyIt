@@ -1,0 +1,83 @@
+<resources>
+    <string name="app_name">Buy It</string>
+    <string name="space"></string>
+    <string name="picture">封面</string>
+    <string name="dotline"> - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</string>
+
+    <string name="P1_title">★Usamaru 兔丸 造型頭套狗狗裝 LINE角色☆</string>
+    <string name="P1_money">$950</string>
+    <string name="P1_brand">LINE FRIENDS</string>
+    <string name="P1_place">台北市中山區</string>
+    <string name="P1_size">長寬 : 22cm x 15 cm</string>
+
+    <string name="P2_title">★Usamaru 兔丸 農場系列 農夫斗笠 吊帶褲 玩偶LINE角色☆</string>
+    <string name="P2_money">$860</string>
+    <string name="P2_brand">LINE FRIENDS</string>
+    <string name="P2_place">台北市南港區</string>
+    <string name="P2_description">Usamaru 2018年5月 LINE角色兔丸系列商品：農場系列農夫造型S號玩偶</string>
+    <string name="P2_size">高約22cm</string>
+
+    <string name="P3_title">★森林雜貨坊 USAMARU 兔丸 帆布方形手提整理收納包 兩側有水瓶口袋☆</string>
+    <string name="P3_money">$225</string>
+    <string name="P3_brand">USAMARU(兔丸)</string>
+    <string name="P3_place">台中市大甲區</string>
+    <string name="content_statement">內容物</string>
+    <string name="P3_content">包包一個（不含拍攝道具）</string>
+    <string name="material_statement">材質</string>
+    <string name="P3_material">環保帆布（黑棉籽/黑棉線）</string>
+    <string name="P3_size">高21×寬21×底11cm [最大値]</string>
+
+    <string name="P4_title">★Usamaru 兔丸 正版授權 帆布包 便當袋 購物袋 手提包☆</string>
+    <string name="P4_money">$290</string>
+    <string name="P4_brand">USAMARU(兔丸)</string>
+    <string name="P4_place">台南市南區</string>
+    <string name="P4_description">手提袋裡面有2處夾層，開口處小夾層放小物或悠遊卡，側邊夾層可放水壺、保溫瓶或雨傘</string>
+    <string name="flavor_statement">顏色款式</string>
+    <string name="P4_flavor">藍提把 / 黑提把</string>
+    <string name="P4_material">帆布</string>
+    <string name="P4_size">高21×寬10×底23.5cm</string>
+
+    <string name="P5_title">★【卡答國際】・USAMARU 正版授權 兔丸 - 動物造型 絨毛 化妝包 收納包☆</string>
+    <string name="P5_money">$270</string>
+    <string name="P5_brand">USAMARU(兔丸)</string>
+    <string name="P5_place">台北市士林區</string>
+    <string name="P5_flavor">咖啡小狗造型 / 粉紅小豬造型</string>
+    <string name="P5_material">水晶超柔</string>
+    <string name="P5_size">高14×寬12×底6cm</string>
+
+    <string name="P6_title">★Usamaru 兔丸 捏捏樂 Qualia 捏捏吊飾 扭蛋 一套5款☆</string>
+    <string name="P6_money">$85</string>
+    <string name="P6_brand">自有品牌</string>
+    <string name="P6_place">高雄市左營區</string>
+    <string name="P6_flavor">兔丸(白) / 兔丸(粉) / 抱布團的兔丸 / 綿羊兔丸 / 布偶熊先生</string>
+    <string name="P6_material">水晶超柔</string>
+    <string name="P6_description">一套五款 $399</string>
+
+    <string name="add">+</string>
+    <string name="sub">-</string>
+    <string name="number">數量:</string>
+    <string name="add_shopping_car">加入購物車</string>
+
+    <string name="specification">商品規格</string>
+    <string name="brand">品牌</string>
+    <string name="place">出貨地</string>
+    <string name="information">商品詳情</string>
+    <string name="size_statement">大小</string>
+
+    <string name="longtouch">長按可刪除訂單</string>
+    <string name="pay">買單</string>
+    <string name="total">...</string>
+
+    <string name="basic">基本資訊(´・ω・`)</string>
+    <string name="class_statement">班級</string>
+    <string name="myclass">資三甲</string>
+    <string name="number_statement">學號</string>
+    <string name="mynumber">110516019</string>
+    <string name="name_statement">姓名</string>
+    <string name="myname">李羚甄</string>
+    <string name="sponsor">贊助廠商( •̀ᄇ• ́)ﻭ✧</string>
+    <string name="unit_statement">贊助單位</string>
+    <string name="unit">嵌入式系統軟體設計</string>
+    <string name="boss_statement">Boss</string>
+    <string name="boss">許佳興</string>
+</resources>
